@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+body {
+  background-color: #eee;
+  font-family: "Hind";
+  margin: auto;
+  width: 960px;
+}
+
+
+/* -- HEADER -- */
+
+header {
+  background: url("img/mountain.png") no-repeat;
+  background-color: #c1c1c1;
+  box-sizing: border-box;
+  height: 470px;
+  padding: 5px;
+}
+
+header h1, header p {
+  margin-left: 475px;
+}
+
+header #safety {
+  background: url("img/logo.png") no-repeat;
+  height: 40px;
+  font-size: 0;
+  width: 215px;
+}
+
+header #celebrating {
+  background: url("img/celebrating.png") no-repeat;
+  height: 80px;
+  font-size: 0;
+  width: 90px;
+}
+
+
+/* -- MAIN -- */
+
+main {
+  background: #fff;
+}
+
+main > * {
+  margin: 5px;
+}
