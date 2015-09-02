@@ -19,7 +19,16 @@ header {
 }
 
 header h1, header p {
-  margin-left: 475px;
+  margin-left: 490px;
+}
+
+header h1 {
+  font-size: 2.3em;
+  font-weight: normal;
+}
+
+header p {
+  font-size: 1.1em;
 }
 
 header #safety {
@@ -33,9 +42,16 @@ header #celebrating {
   background: url("img/celebrating.png") no-repeat;
   height: 80px;
   font-size: 0;
+  margin-left: 0;
   width: 90px;
 }
 
+header #safety, header #celebrating {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 25px;
+  vertical-align: middle;
+}
 
 /* -- MAIN -- */
 
@@ -43,23 +59,34 @@ main {
   background: #fff;
 }
 
-main > * {
-}
-
 main article {
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   width: 475px;
 }
 
+main h2 {
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+
+/* -- Enterprise -- */
+
 main #enterprise {
   background: black;
+  padding: 0;
 }
 
 main #enterprise section {
   box-sizing: border-box;
+  color: #fff;
   display: inline-block;
   height: 225px;
+  margin: 5px;
+  padding: 10px;
   vertical-align: top;
   width: 225px;
 }
@@ -68,26 +95,63 @@ main #team {
   background: #cf4545;
 }
 
+main #team img {
+  margin: -10px;
+}
+
 main #clients {
   background: #248a99;
 }
 
+main #clients h2 {
+  font-size: 3em;
+}
+
+main #clients p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
 main #topics {
   background: #587f97;
+  margin-top: 5px;
+}
+
+main #topics h2:before {
+  content: url("img/topics.png");
+  display: block;
+  height: 70px;
+  margin: 40px auto 0;
+  width: 70px;
 }
 
 main #contact {
   background: #587f97;
+  margin-top: 5px;
 }
+
+main #contact h2:before {
+  content: url("img/contact.png");
+  display: block;
+  height: 70px;
+  margin: 40px auto 0;
+  width: 70px;
+}
+
+
+/* -- Qualities -- */
 
 main #qualities {
   background: grey;
+  padding: 0;
 }
 
 main #qualities section {
+  box-sizing: border-box;
   display: inline-block;
-  height:470px;
-  width: 230px;
+  height: 470px;
+  margin: 5px;
+  width: 225px;
 }
 
 main #creativity {
@@ -97,6 +161,9 @@ main #creativity {
 main #expertise {
   background: #f4f4f4;
 }
+
+
+/* -- FOOTER -- */
 
 footer {
   background: #255e82;
