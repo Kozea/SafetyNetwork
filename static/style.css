@@ -55,21 +55,17 @@ header #safety, header #celebrating {
 
 /* -- MAIN -- */
 
-main {
-  background: #fff;
-}
 
 main article {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  width: 475px;
+  float: left;
+  padding: 0;
+  text-align: center;
+  width: 480px;
 }
 
 main h2 {
   font-weight: normal;
   margin: 0;
-  text-align: center;
 }
 
 
@@ -77,18 +73,16 @@ main h2 {
 
 main #enterprise {
   background: black;
-  padding: 0;
 }
 
 main #enterprise section {
   box-sizing: border-box;
   color: #fff;
-  display: inline-block;
-  height: 225px;
+  float: left;
+  height: 230px;
   margin: 5px;
   padding: 10px;
-  vertical-align: top;
-  width: 225px;
+  width: 230px;
 }
 
 main #team {
@@ -114,28 +108,27 @@ main #clients p {
 
 main #topics {
   background: #587f97;
-  margin-top: 5px;
+
 }
 
 main #topics h2:before {
   content: url("img/topics.png");
   display: block;
-  height: 70px;
-  margin: 40px auto 0;
-  width: 70px;
+  height: 50px;
+  margin: 40px auto 20px;
+  width: 50px;
 }
 
 main #contact {
   background: #587f97;
-  margin-top: 5px;
 }
 
 main #contact h2:before {
   content: url("img/contact.png");
   display: block;
-  height: 70px;
-  margin: 40px auto 0;
-  width: 70px;
+  height: 50px;
+  margin: 40px auto 20px;
+  width: 50px;
 }
 
 
@@ -148,18 +141,48 @@ main #qualities {
 
 main #qualities section {
   box-sizing: border-box;
-  display: inline-block;
+  float: left;
   height: 470px;
   margin: 5px;
-  width: 225px;
+  width: 230px;
+}
+
+main #qualities h2 {
+  text-transform: uppercase;
+}
+
+main #qualities p {
+  font-size: 1.1em;
+}
+
+main #qualities span {
+  display: block;
+  font-weight: bold;
 }
 
 main #creativity {
   background: #cf4545;
+  color: #fff;
+}
+
+main #creativity h2:before {
+  content: url("img/creativity.png");
+  display: block;
+  height: 70px;
+  margin: 55px auto 20px;
+  width: 70px;
 }
 
 main #expertise {
   background: #f4f4f4;
+}
+
+main #expertise h2:before {
+  content: url("img/clients.png");
+  display: block;
+  height: 70px;
+  margin: 55px auto 20px;
+  width: 70px
 }
 
 
@@ -167,4 +190,9 @@ main #expertise {
 
 footer {
   background: #255e82;
+  color: #fff;
+}
+
+footer p {
+  margin: 5px;
 }
