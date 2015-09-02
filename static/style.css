@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Hind:400,500,700);
 
 body {
-  background-color: #eee;
   font-family: "Hind";
   margin: auto;
+  position: relative;
   width: 960px;
 }
 
@@ -12,7 +12,6 @@ body {
 
 header {
   background: url("img/mountain.png") no-repeat;
-  background-color: #c1c1c1;
   box-sizing: border-box;
   height: 480px;
   padding: 5px;
@@ -31,12 +30,12 @@ header p {
   font-size: 1.1em;
 }
 
-header #safety {
+/*header #safety {
   background: url("img/logo.png") no-repeat;
   height: 40px;
   font-size: 0;
   width: 215px;
-}
+}*/
 
 header #celebrating {
   background: url("img/celebrating.png") no-repeat;
@@ -52,6 +51,36 @@ header #safety, header #celebrating {
   margin-top: 25px;
   vertical-align: middle;
 }
+
+
+header #presentation {
+  color: transparent;
+  height: 450px;
+  position: absolute;
+  left: 485px;
+  padding: 10px;
+  top: 485px;
+  width: 450px;
+  z-index: 0;
+}
+
+header #presentation:hover {
+  background: #404c58;
+  color: #fff;
+  transition: background 0.7s, color 0.7s, z-index 0.7s;
+  z-index: 1;
+}
+
+header #presentation p {
+  font-size: 1em;
+  margin-left: 0;
+}
+
+header #presentation p:first-child {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
 
 /* -- MAIN -- */
 
@@ -72,7 +101,6 @@ main h2 {
 /* -- Enterprise -- */
 
 main #enterprise {
-  background: black;
 }
 
 main #enterprise section {
@@ -108,7 +136,6 @@ main #clients p {
 
 main #topics {
   background: #587f97;
-
 }
 
 main #topics h2:before {
@@ -135,7 +162,6 @@ main #contact h2:before {
 /* -- Qualities -- */
 
 main #qualities {
-  background: grey;
   padding: 0;
 }
 
@@ -157,7 +183,7 @@ main #qualities p {
 
 main #qualities span {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 main #creativity {
@@ -190,9 +216,7 @@ main #expertise h2:before {
 
 footer {
   background: #255e82;
+  clear: both;
   color: #fff;
-}
-
-footer p {
   margin: 5px;
 }
