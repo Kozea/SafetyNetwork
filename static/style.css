@@ -14,7 +14,7 @@ header {
   background: url("img/mountain.png") no-repeat;
   background-color: #c1c1c1;
   box-sizing: border-box;
-  height: 470px;
+  height: 480px;
   padding: 5px;
 }
 
@@ -44,5 +44,60 @@ main {
 }
 
 main > * {
-  margin: 5px;
+}
+
+main article {
+  display: inline-block;
+  vertical-align: top;
+  width: 475px;
+}
+
+main #enterprise {
+  background: black;
+}
+
+main #enterprise section {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 225px;
+  vertical-align: top;
+  width: 225px;
+}
+
+main #team {
+  background: #cf4545;
+}
+
+main #clients {
+  background: #248a99;
+}
+
+main #topics {
+  background: #587f97;
+}
+
+main #contact {
+  background: #587f97;
+}
+
+main #qualities {
+  background: grey;
+}
+
+main #qualities section {
+  display: inline-block;
+  height:470px;
+  width: 230px;
+}
+
+main #creativity {
+  background: #cf4545;
+}
+
+main #expertise {
+  background: #f4f4f4;
+}
+
+footer {
+  background: #255e82;
 }
