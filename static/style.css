@@ -30,42 +30,41 @@ header p {
   font-size: 1.1em;
 }
 
-header #celebrating {
-  background: url("img/celebrating.png") no-repeat;
-  height: 80px;
-  font-size: 0;
-  margin-left: 0;
-  width: 90px;
-}
-
-header #safety, header #celebrating {
-  box-sizing: border-box;
-  display: inline-block;
-  margin-top: 25px;
-  vertical-align: middle;
-}
-
-header #presentation {
+header section {
+  background: transparent;
   color: transparent;
   height: 450px;
-  position: absolute;
-  left: 485px;
   padding: 10px;
+  position: absolute;
   top: 485px;
-  width: 450px;
   z-index: 0;
 }
 
-header #presentation:hover {
-  background: #404c58;
-  color: #fff;
-  transition: background 0.7s, color 0.7s, z-index 0.7s;
-  z-index: 1;
-}
-
-header #presentation p {
+header section p {
   font-size: 1em;
   margin-left: 0;
+}
+
+header section:hover p:first-of-type {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+header section:hover {
+  background: #404c58;
+  color: #fff;
+  transition: background 0.5s, color 0.7s, z-index 0.7s;
+  z-index: 10;
+}
+
+header #presentation {
+  left: 485px;
+  width: 450px;
+}
+
+header #celebrating {
+  left: 715px;
+  width: 220px;
 }
 
 header #presentation img {
@@ -73,10 +72,9 @@ header #presentation img {
   top: -200px;
 }
 
-header #presentation p:first-child {
-  font-size: 1.3em;
-  font-weight: 500;
-  color: red;
+header #celebrating img {
+  position: absolute;
+  top: -225px;
 }
 
 
