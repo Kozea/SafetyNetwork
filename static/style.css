@@ -88,15 +88,13 @@ main article {
 }
 
 main h2 {
+  font-size: 1.2em;
   font-weight: normal;
   margin: 0;
 }
 
 
 /* -- Enterprise -- */
-
-main #enterprise {
-}
 
 main #enterprise section {
   box-sizing: border-box;
@@ -112,22 +110,29 @@ main #team {
   background: #cf4545;
 }
 
-main #team img {
-  margin: -10px;
+main #team h2:before {
+  content: url("img/team.png");
+  display: block;
+  margin: -10px -10px 5px;
 }
+
 
 main #clients {
   background: #248a99;
 }
 
-main #clients h2 {
-  font-size: 3em;
+main #clients h2:before {
+  color: #fff;
+  content: "90%";
+  display: block;
+  font-size: 2.5em;
 }
 
-main #clients p {
-  font-size: 1.3em;
-  text-align: center;
+main #clients span {
+  display: block;
+  font-weight: 500;
 }
+
 
 main #topics {
   background: #587f97;
@@ -141,6 +146,7 @@ main #topics h2:before {
   width: 50px;
 }
 
+
 main #contact {
   background: #587f97;
 }
@@ -153,6 +159,48 @@ main #contact h2:before {
   width: 50px;
 }
 
+main #contact:hover, main #topics:hover {
+  background: #4c6e83;
+  transition: background 0.3s;
+}
+
+main #contact #numbers {
+  background: transparent;
+  color: transparent;
+  height: 470px;
+  left: 480px;
+  padding: 10px;
+  position: absolute;
+  top: 480px;
+  width: 470px;
+  z-index: 0;
+}
+
+main #contact:hover #numbers {
+  background: #404c58;
+  color: #fff;
+  transition: background 0.5s, color 0.7s, z-index 0.7s;
+  z-index: 110;
+}
+
+main #contact #numbers {
+  text-align: left;
+}
+
+main #contact #numbers h3 {
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+main #contact #numbers dl dt {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+main #contact #numbers dl dd {
+  margin: 0 0 15px 0;
+}
 
 /* -- Qualities -- */
 
