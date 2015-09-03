@@ -30,13 +30,6 @@ header p {
   font-size: 1.1em;
 }
 
-/*header #safety {
-  background: url("img/logo.png") no-repeat;
-  height: 40px;
-  font-size: 0;
-  width: 215px;
-}*/
-
 header #celebrating {
   background: url("img/celebrating.png") no-repeat;
   height: 80px;
@@ -51,7 +44,6 @@ header #safety, header #celebrating {
   margin-top: 25px;
   vertical-align: middle;
 }
-
 
 header #presentation {
   color: transparent;
@@ -76,14 +68,19 @@ header #presentation p {
   margin-left: 0;
 }
 
+header #presentation img {
+  position: absolute;
+  top: -200px;
+}
+
 header #presentation p:first-child {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 500;
+  color: red;
 }
 
 
 /* -- MAIN -- */
-
 
 main article {
   float: left;
@@ -163,6 +160,7 @@ main #contact h2:before {
 
 main #qualities {
   padding: 0;
+  position: relative;
 }
 
 main #qualities section {
@@ -191,6 +189,10 @@ main #creativity {
   color: #fff;
 }
 
+main #creativity:hover {
+  background: black;
+}
+
 main #creativity h2:before {
   content: url("img/creativity.png");
   display: block;
@@ -201,6 +203,10 @@ main #creativity h2:before {
 
 main #expertise {
   background: #f4f4f4;
+}
+
+main #expertise:hover {
+  background: #d1d1d1;
 }
 
 main #expertise h2:before {
