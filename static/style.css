@@ -310,6 +310,47 @@ main #expertise h2:before {
 }
 
 
+/* -- Difference -- */
+main #difference {
+  border: 1px solid #ededed;
+  display: table;
+  margin-top: 10px;
+  position: relative;
+  width: 960px;
+}
+
+main #difference #creativity {
+  display: table-cell;
+  width: 230px;
+}
+
+main #difference #creativity h2 {
+  text-transform: uppercase;
+}
+
+main #difference #creativity span {
+  display: block;
+  font-weight: 700;
+}
+
+main #difference #ideas {
+  display: table-cell;
+  padding: 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+main #difference #ideas h3 {
+  color: #587f97;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+main #difference #ideas ul {
+  line-height: 2;
+  list-style: none;
+}
+
 /* -- FOOTER -- */
 
 footer {
