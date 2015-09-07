@@ -49,6 +49,7 @@
 }
 
 body {
+  color: #272c2f;
   font-family: "Hind";
   margin: auto;
   position: relative;
@@ -295,6 +296,7 @@ main #creativity h2:before {
 
 main #expertise {
   background: #f4f4f4;
+  color: #272c2f;
 }
 
 main #expertise h2:before {
@@ -383,6 +385,8 @@ main #testimonies #name:before {
 }
 
 main #testimonies #name h3 {
+  color: #cf4545;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
