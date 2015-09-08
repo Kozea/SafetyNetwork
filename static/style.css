@@ -56,6 +56,11 @@ body {
   width: 960px;
 }
 
+ul {
+  line-height: 2;
+  list-style: none;
+  padding: 0;
+}
 
 /* -- HEADER -- */
 
@@ -130,6 +135,10 @@ header #celebrating img {
 /* -- MAIN -- */
 
 main article {
+  float: left;
+}
+
+main #enterprise, main #qualities {
   float: left;
   padding: 0;
   text-align: center;
@@ -274,6 +283,7 @@ main #qualities p {
 main #creativity {
   background: #cf4545;
   color: #fff;
+  text-align: center;
 }
 
 main #creativity h2, main #expertise h2 {
@@ -297,6 +307,7 @@ main #creativity h2:before {
 main #expertise {
   background: #f4f4f4;
   color: #272c2f;
+  text-align: center;
 }
 
 main #expertise h2:before {
@@ -336,67 +347,20 @@ main #difference #ideas h3 {
   text-transform: uppercase;
 }
 
-main #difference #ideas ul {
-  line-height: 2;
-  list-style: none;
-}
-
 
 /* -- Expertise -- */
 
 main #testimonies {
   border: 1px solid #ededed;
-  display: table;
-  margin-top: 10px;
   position: relative;
   width: 960px;
 }
 
 main #testimonies #expertise {
-  display: table-cell;
+  float: left;
   width: 230px;
 }
 
-main #testimonies #records {
-  display: table-cell;
-  padding: 10px;
-  text-align: left;
-  vertical-align: top;
-}
-
-main #testimonies #records p:first-of-type:before {
-  content: open-quote;
-  font-weight: 500;
-  font-size: 2em;
-}
-
-main #testimonies #records p:last-of-type:after {
-  content: close-quote;
-  font-weight: 500;
-  font-size: 2em;
-}
-
-main #testimonies #name:before {
-  content: url("img/jorge_hernandez.png");
-  background: #eee;
-  display: block;
-  height: 100px;
-  width: 100px;
-}
-
-main #testimonies #name h3 {
-  color: #cf4545;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-main #testimonies #name p {
-  margin: 0;
-}
-
-main #testimonies #name p:first-of-type:before, main #testimonies #name p:last-of-type:after {
-  content: none;
-}
 
 
 /* -- Executive team -- */
@@ -469,7 +433,66 @@ main #executive #directors #eric:before {
 
 /* -- Red hot safety topics -- */
 
+main #news {
+  border: 1px solid #ededed;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  width: 960px;
+}
 
+main #news h2 {
+  background: #587f97;
+  color: #fff;
+  margin: -10px;
+  padding: 5px 0 5px 20px;
+  text-transform: uppercase;
+}
+
+main #news h3 {
+  font-weight: 500;
+}
+
+main #news img {
+  /*float: left;*/
+  margin: 0 10px;
+  max-height: 100%;
+  max-width: 125px;
+}
+
+main #news .news-content {
+  background: black;
+display: inline-block;
+width: 50%;
+box-sizing: border-box;
+}
+
+main #news section {
+
+
+  margin: 10px auto;
+}
+
+main #news #date {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main #news #date h4, h5 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+main #news #date h4 {
+  color: #9d9d9d;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+main #news #date h5 {
+  color: #cf4545;
+  font-weight: 500;
+}
 
 
 /* -- FOOTER -- */

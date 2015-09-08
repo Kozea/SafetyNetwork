@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <title>Safety Network - Inspirational safety leadership </title>
     <link type="image/png" rel="icon" href="static/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
     <link type="text/css" rel="stylesheet" href="static/style.css" />
     <!--<link type="text/css" rel="stylesheet" href="static/hover-min.css">-->
   </head>
@@ -48,26 +50,91 @@
           <h2>What <span>clients</span> say about our <span>expertise</span></h2>
           <p>Selected testimonies and awesome track records</p>
         </section>
-        <section id="records" class="slick">
-          <p>SafetyNetwork helped O-I Europe to assess th safety performance in
-            ten (10) opportunity plants bringing with a program frame, a "Taylor made"
-            plant safety road map with a clear execution plan developed in conjunction
-            of the plan team.
-          </p>
-          <p>
-            Believe few words can better describe the value and contribution of
-            this exercice which is another step in our journey and focus on building
-            an injury-free environment and culture in our plants : not doing more
-            but better, strenghten motication from plant management to the shop
-            flor, raising safety awareness and looking for new opportunities,
-            understanding our roles and responsabilities on risks assessments,
-            value of safety and understanding ways to improve conditions and
-            behaviors.
-          </p>
-          <section id="name">
-            <h3>Jorge Hernandez</h3>
-            <p>VP Manufacturing Europe OI-Europe</p>
-          </section>
+        <section id="records">
+          <div>
+            <blockquote>
+              <p>SafetyNetwork helped O-I Europe to assess th safety performance in
+              ten (10) opportunity plants bringing with a program frame, a "Taylor made"
+              plant safety road map with a clear execution plan developed in conjunction
+              of the plan team.
+              </p>
+              <p>
+                Believe few words can better describe the value and contribution of
+                this exercice which is another step in our journey and focus on building
+                an injury-free environment and culture in our plants : not doing more
+                but better, strenghten motication from plant management to the shop
+                flor, raising safety awareness and looking for new opportunities,
+                understanding our roles and responsabilities on risks assessments,
+                value of safety and understanding ways to improve conditions and
+                behaviors.
+              </p>
+              <section id="name">
+                <h3>Jorge Hernandez</h3>
+                <p>VP Manufacturing Europe OI-Europe</p>
+              </section>
+            </blockquote>
+          </div>
+
+          <div>
+            <blockquote>
+              <p>
+                In a very specific cultural context in terms of safety,
+                SafetyNetwork helped us to evolve from a disciplinary
+                driven approach to one of Management. Through the
+                involvement of all levels in the company, the
+                implementation of suitable field tools and appropriate
+                communication channels, we have reduced our injury
+                rate by almost 95% allowing us now to aim for "zero
+                accidents".
+              </p>
+              <section id="name">
+                <h3>Laurent Sanchez</h3>
+                <p>General Manager China</p>
+                <p>Le Belier Longtou-Lushun-Dalian-China</p>
+              </section>
+            </blockquote>
+          </div>
+
+          <div>
+            <blockquote>
+              <p>
+                SafetyNetwork contributed significantly to improving
+                our BU’s safety performance. They accompanied our
+                approach by helping all actors identify their correct
+                positioning and by facilitating a reflection on the
+                conditions needed for a successful culture change.
+                Their approach combines pragmatism and a bird’s eye
+                view.
+              </p>
+              <section id="name">
+                <h3>Xavier Saint Martin Tillet</h3>
+                <p>Industrial Director - Lafarge</p>
+              </section>
+            </blockquote>
+          </div>
+
+          <div>
+            <blockquote>
+              <p>
+                SafetyNetwork provided for Bostik a tailor made
+                program to drive our worldwide Behavior Based Safety
+                training program aimed at reinforcing the exemplarity
+                of Managers, the reinforcement of safety on the field
+                via effective conversation. The motto “Don’t Walk
+                Past” is now in the Bostik culture; the methodic
+                approach of the training program has been very
+                beneficial to all regions. This ambitious approach was
+                a significant step on our path to Operational
+                Excellence.
+              </p>
+              <section id="name">
+                <h3>François Germain</h3>
+                <p>Worlwide HSE Director - Bostik</p>
+              </section>
+            </blockquote>
+          </div>
+
+
         </section>
       </article>
     </main>
@@ -75,5 +142,13 @@
     <footer>
       <p>© 2009-2015 SafetyNetwork</p>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#records").slick({arrows: false, autoplay: true, dots: true});
+      });
+    </script>
   </body>
 </html>
