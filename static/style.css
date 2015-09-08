@@ -398,6 +398,75 @@ main #testimonies #name p:first-of-type:before, main #testimonies #name p:last-o
   content: none;
 }
 
+
+/* -- Executive team -- */
+
+main #executive {
+  border: 1px solid #ededed;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  width: 960px;
+}
+
+main #executive h2 {
+  background: #cf4545;
+  color: #fff;
+  margin: -10px;
+  padding: 5px 0 5px 20px;
+  text-transform: uppercase;
+}
+
+main #executive #partners, main #executive #directors {
+  float: left;
+  width: 50%;
+}
+
+main #executive section {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+main #executive section h4 {
+  margin: 0;
+}
+
+main #executive section p {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+main #executive #partners section:before, main #executive #directors section:before  {
+  float: left;
+  margin-right: 5px;
+}
+
+main #executive #partners #edward:before {
+  content: url("img/edward.png");
+}
+
+main #executive #partners #sylvestre:before {
+  content: url("img/sylvestre.png");
+}
+
+main #executive #partners #thierry:before {
+  content: url("img/thierry.png");
+}
+
+main #executive #directors #jeff:before {
+  content: url("img/jeff.png");
+}
+
+main #executive #directors #emmanuel:before {
+  content: url("img/emmanuel.png");
+}
+
+main #executive #directors #eric:before {
+  content: url("img/eric.png");
+}
+
+
 /* -- FOOTER -- */
 
 footer {
