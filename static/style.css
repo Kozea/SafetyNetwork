@@ -228,7 +228,7 @@ main #qualities section {
   width: 230px;
 }
 
-main #qualities section h2:before {
+main #creativity h2:before, main #expertise h2:before {
   display: block;
   height: 55px;
   margin: 80px auto 40px;
@@ -293,15 +293,65 @@ main #difference #ideas h3 {
 
 main #testimonies {
   border: 1px solid #ededed;
+  display: table;
+  margin-top: 10px;
   position: relative;
   width: 960px;
+  overflow: hidden;
 }
 
 main #testimonies #expertise {
+  display: table-cell;
   float: left;
   width: 230px;
 }
 
+main #testimonies #records {
+  display: table-cell;
+  left: 230px;
+  position: absolute;
+  width: 730px;
+  margin-bottom: 50px;
+}
+
+main #testimonies #records #jorge:before {
+  content: url("img/jorge_hernandez.png");
+}
+
+main #testimonies #records #laurent:before {
+  content: url("img/laurent_sanchez.png");
+}
+
+main #testimonies #records #xavier:before {
+  content: url("img/xavier_stmartin.png");
+}
+
+main #testimonies #records #francois:before {
+  content: url("img/francois_germain.png");
+}
+
+main #testimonies #records section:before {
+  background: red;
+  content: "";
+  height: 100px;
+  width: 100px;
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+
+main #testimonies #records .slick-dots {
+  bottom: 0;
+}
+
+main #testimonies #records .slick-dots li {
+  margin: 0;
+  width: 10px;
+}
+
+main #testimonies #records .slick-dots li.slick-active button:before {
+  color: #cf4545;
+}
 
 
 /* -- Executive team -- */
