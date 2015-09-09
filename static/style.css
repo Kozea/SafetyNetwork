@@ -435,8 +435,8 @@ main #executive #directors #eric:before {
 
 main #news {
   border: 1px solid #ededed;
+  display: table;
   margin-top: 10px;
-  padding: 10px;
   position: relative;
   width: 960px;
 }
@@ -444,7 +444,6 @@ main #news {
 main #news h2 {
   background: #587f97;
   color: #fff;
-  margin: -10px;
   padding: 5px 0 5px 20px;
   text-transform: uppercase;
 }
@@ -454,28 +453,23 @@ main #news h3 {
 }
 
 main #news img {
-  /*float: left;*/
+  float: left;
   margin: 0 10px;
   max-height: 100%;
   max-width: 125px;
 }
 
 main #news .news-content {
-  background: black;
-display: inline-block;
-width: 50%;
-box-sizing: border-box;
-}
-
-main #news section {
-
-
+  box-sizing: border-box;
+  display: inline-block;
   margin: 10px auto;
+  padding: 10px;
+  vertical-align: top;
+  width: 50%;
 }
 
 main #news #date {
   margin-top: 20px;
-  text-align: center;
 }
 
 main #news #date h4, h5 {
