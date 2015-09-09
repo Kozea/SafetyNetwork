@@ -101,13 +101,13 @@ main #enterprise, main #qualities {
 
 main h2 {
   font-size: 1.2em;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0;
 }
 
 main span {
   display: block;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 
@@ -294,6 +294,7 @@ main #difference #ideas h3 {
 main #testimonies {
   border: 1px solid #ededed;
   display: table;
+  float: none;
   margin-top: 10px;
   position: relative;
   width: 960px;
@@ -302,7 +303,6 @@ main #testimonies {
 
 main #testimonies #expertise {
   display: table-cell;
-  float: left;
   width: 230px;
 }
 
@@ -312,6 +312,16 @@ main #testimonies #records {
   position: absolute;
   width: 730px;
   margin-bottom: 50px;
+}
+
+main #testimonies #records section h3 {
+  color: #cf4545;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+main #testimonies #records section p {
+  margin: 0;
 }
 
 main #testimonies #records #jorge:before {
@@ -331,13 +341,11 @@ main #testimonies #records #francois:before {
 }
 
 main #testimonies #records section:before {
-  background: red;
-  content: "";
-  height: 100px;
-  width: 100px;
   display: block;
+  height: 100px;
   float: left;
   margin-right: 15px;
+  width: 100px;
 }
 
 main #testimonies #records .slick-dots {
@@ -351,6 +359,10 @@ main #testimonies #records .slick-dots li {
 
 main #testimonies #records .slick-dots li.slick-active button:before {
   color: #cf4545;
+}
+
+main #testimonies #records .slick-dots li:hover button:before {
+  color: #7d7d7d;
 }
 
 
@@ -486,6 +498,7 @@ footer {
   background: #255e82;
   clear: both;
   color: #fff;
-  margin: 5px;
   padding: 0 5px;
+  position: relative;
+  z-index: 20;
 }
