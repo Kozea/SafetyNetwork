@@ -146,12 +146,16 @@ main #clients h2:before {
   margin: 15px auto;
 }
 
-
-main #contact {
+main #topics {
   background: #587f97;
 }
 
-main #topics {
+main #topics h2:before {
+  content: url("img/topics.svg");
+}
+
+
+main #contact {
   background: #587f97;
 }
 
@@ -160,10 +164,6 @@ main #contact h2:before, main #topics h2:before {
   height: 45px;
   margin: 40px auto;
   width: 45px;
-}
-
-main #topics h2:before {
-  content: url("img/topics.svg");
 }
 
 main #contact h2:before {
@@ -228,6 +228,7 @@ main #qualities section {
   width: 230px;
 }
 
+
 main #creativity h2:before, main #expertise h2:before {
   display: block;
   height: 55px;
@@ -241,18 +242,19 @@ main #creativity {
   text-align: center;
 }
 
-main #expertise {
-  background: #f4f4f4;
-  color: #272c2f;
-  text-align: center;
-}
-
 main #creativity h2, main #expertise h2 {
   text-transform: uppercase;
 }
 
 main #creativity h2:before {
   content: url("img/creativity.svg");
+}
+
+
+main #expertise {
+  background: #f4f4f4;
+  color: #272c2f;
+  text-align: center;
 }
 
 main #expertise h2:before {
@@ -324,6 +326,14 @@ main #testimonies #records section p {
   margin: 0;
 }
 
+main #testimonies #records section:before {
+  display: block;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+  width: 100px;
+}
+
 main #testimonies #records #jorge:before {
   content: url("img/jorge_hernandez.png");
 }
@@ -338,14 +348,6 @@ main #testimonies #records #xavier:before {
 
 main #testimonies #records #francois:before {
   content: url("img/francois_germain.png");
-}
-
-main #testimonies #records section:before {
-  display: block;
-  height: 100px;
-  float: left;
-  margin-right: 15px;
-  width: 100px;
 }
 
 main #testimonies #records .slick-dots {
@@ -503,6 +505,7 @@ main #gallery {
 main #gallery #clients {
   width: 230px;
 }
+
 
 /* -- FOOTER -- */
 
