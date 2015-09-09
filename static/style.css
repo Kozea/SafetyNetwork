@@ -49,12 +49,12 @@ header section {
 }
 
 header section p {
-  font-size: 1em;
+  font-size: 0.95em;
   margin-left: 0;
 }
 
 header section:hover p:first-of-type {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
@@ -491,6 +491,18 @@ main #news #date h5 {
   font-weight: 500;
 }
 
+
+/* -- Thanks to our amazing clients -- */
+
+main #gallery {
+  background: black;
+  position: relative;
+  width: 960px;
+}
+
+main #gallery #clients {
+  width: 230px;
+}
 
 /* -- FOOTER -- */
 
