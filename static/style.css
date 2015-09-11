@@ -101,10 +101,6 @@ header #celebrating:before {
 
 /* -- MAIN -- */
 
-main article {
-  float: left;
-}
-
 main #enterprise, main #qualities {
   float: left;
   margin-top: 10px;
@@ -201,7 +197,7 @@ main #contact h2:before {
   content: url("img/contact.svg");
 }
 
-main #contact:hover, main #topics:hover {
+main #enterprise #contact:hover, main #enterprise #topics:hover {
   background: #4c6e83;
   transition: background 0.3s;
 }
@@ -539,13 +535,36 @@ main #news .news-content a:hover {
 /* -- Thanks to our amazing clients -- */
 
 main #gallery {
-  background: black;
-  position: relative;
+  background: url("img/wallpaper.png") no-repeat 50% 40px;
+  border: 1px solid #d8d8d8;
+  height: 1350px;
+  margin-top: 10px;
+  padding: 10px;
   width: 960px;
 }
 
+main #gallery h2 {
+  background: #cf4545;
+  color: #fff;
+  margin: -10px;
+  padding: 5px 0 5px 20px;
+  text-transform: uppercase;
+}
+
 main #gallery #clients {
-  width: 230px;
+  color: #fff;
+  height: 233px;
+  margin: 25px 0 0 102px;
+  padding: 10px;
+  text-align: center;
+  width: 233px;
+}
+
+main #gallery #clients p:before {
+  content: "90%";
+  display: block;
+  font-size: 3em;
+  margin: 15px auto;
 }
 
 
