@@ -39,11 +39,11 @@ header h1 a {
   width: 215px;
 }
 
-header p {
+header > p {
   font-size: 1.2em;
 }
 
-header p:first-of-type {
+header > p:first-of-type {
   font-size: 2.5em;
 }
 
@@ -255,6 +255,16 @@ main #contact #numbers dl dd {
   margin: 0 5px 15px 0;
 }
 
+main article:not(#qualities):not(#enterprise) {
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  display: table;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 10px;
+  width: 950px;
+}
+
 
 /* -- Qualities -- */
 
@@ -331,14 +341,6 @@ main #expertise h2:before {
 
 /* -- Difference -- */
 
-main #difference {
-  border: 1px solid #ededed;
-  display: table;
-  margin-top: 10px;
-  padding: 10px;
-  width: 950px;
-}
-
 main #difference #creativity {
   display: table-cell;
   width: 230px;
@@ -359,15 +361,6 @@ main #difference #ideas h3 {
 
 
 /* -- Expertise -- */
-
-main #testimonies {
-  border: 1px solid #ededed;
-  display: table;
-  margin-top: 10px;
-  overflow: hidden;
-  padding: 10px;
-  width: 950px;
-}
 
 main #testimonies #expertise {
   display: table-cell;
@@ -504,14 +497,6 @@ main #executive #directors #eric:before {
 
 /* -- Red hot safety topics -- */
 
-main #news {
-  border: 1px solid #ededed;
-  display: table;
-  margin-top: 10px;
-  padding: 10px;
-  width: 950px;
-}
-
 main #news h2 {
   background: #587f97;
   color: #fff;
@@ -600,5 +585,4 @@ footer {
   color: #fff;
   margin-top: 10px;
   padding: 0 5px;
-  width: 960px;
 }
