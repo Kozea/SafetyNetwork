@@ -136,7 +136,6 @@ main #enterprise section {
   height: 230px;
   margin: 0 10px 10px 0;
   padding: 10px;
-  position: relative;
   width: 230px;
 }
 
@@ -145,8 +144,8 @@ main #enterprise section:nth-child(2n) {
 }
 
 main #enterprise section a {
-  display: block;
   color: transparent;
+  display: block;
   font-size: 0;
   height: 100%;
   left: 0;
@@ -185,6 +184,7 @@ main #clients h2:before {
   font-size: 3em;
   margin: 15px auto;
 }
+
 
 main #topics {
   background: #587f97;
@@ -373,6 +373,7 @@ main #testimonies #expertise {
   width: 230px;
 }
 
+
 main #testimonies #records {
   display: table-cell;
   left: 230px;
@@ -552,6 +553,7 @@ main #news .news-content a:hover {
   color: #FA7C7C;
   transition: 0.2s;
 }
+
 
 /* -- Thanks to our amazing clients -- */
 
