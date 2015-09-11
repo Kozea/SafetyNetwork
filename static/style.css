@@ -24,23 +24,19 @@ header {
   padding: 5px 5px 5px 480px;
 }
 
-header h1, header p {
-
-}
-
 header h1 {
+  margin: 0;
   position: absolute;
   top: 320px;
-  margin: 0;
 }
 
 header h1 a {
+  background: url("img/logo.png") no-repeat;
+  color: transparent;
   display: block;
   height: 40px;
-  width: 215px;
-  background: url("img/logo.png") no-repeat;
   font-size: 0;
-  color: transparent;
+  width: 215px;
 }
 
 header p {
@@ -148,13 +144,13 @@ main #enterprise section:nth-child(2n) {
 
 main #enterprise section a {
   display: block;
+  color: transparent;
   font-size: 0;
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
-  color: transparent;
 }
 
 main #team {
@@ -244,7 +240,8 @@ main #contact #numbers dl dt {
 }
 
 main #contact #numbers dl dd {
-  margin: 0 0 15px 0;
+  display: inline-block;
+  margin: 0 5px 15px 0;
 }
 
 
@@ -266,14 +263,14 @@ main #qualities section {
 }
 
 main #qualities section a {
-  position: absolute;
-  color: inherit;
-  text-decoration: inherit;
-  padding-top: 320px;
   box-sizing: border-box;
-  top: 0;
-  left: 0;
+  color: inherit;
   height: 100%;
+  left: 0;
+  padding-top: 320px;
+  position: absolute;
+  text-decoration: inherit;
+  top: 0;
   width: 100%;
 }
 
@@ -349,9 +346,9 @@ main #testimonies {
   display: table;
   float: none;
   margin-top: 10px;
+  overflow: hidden;
   position: relative;
   width: 960px;
-  overflow: hidden;
 }
 
 main #testimonies #expertise {
@@ -362,9 +359,9 @@ main #testimonies #expertise {
 main #testimonies #records {
   display: table-cell;
   left: 230px;
+  margin-bottom: 50px;
   position: absolute;
   width: 730px;
-  margin-bottom: 50px;
 }
 
 main #testimonies #records section h3 {
@@ -524,26 +521,15 @@ main #news .news-content {
   width: 50%;
 }
 
-main #news #date {
-  margin-top: 20px;
-}
-
-main #news #date h4, h5 {
-  font-size: 1.2em;
-  margin: 0;
-}
-
-main #news #date h4 {
-  color: #9d9d9d;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-main #news #date h5 {
+main #news .news-content a {
   color: #cf4545;
-  font-weight: 500;
+  text-decoration: none;
 }
 
+main #news .news-content a:hover {
+  color: #FA7C7C;
+  transition: 0.2s;
+}
 
 /* -- Thanks to our amazing clients -- */
 
