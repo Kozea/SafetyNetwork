@@ -334,8 +334,8 @@ main #difference {
   border: 1px solid #ededed;
   display: table;
   margin-top: 10px;
-  position: relative;
-  width: 960px;
+  padding: 10px;
+  width: 950px;
 }
 
 main #difference #creativity {
@@ -362,11 +362,10 @@ main #difference #ideas h3 {
 main #testimonies {
   border: 1px solid #ededed;
   display: table;
-  float: none;
   margin-top: 10px;
   overflow: hidden;
-  position: relative;
-  width: 960px;
+  padding: 10px;
+  width: 950px;
 }
 
 main #testimonies #expertise {
@@ -439,10 +438,9 @@ main #testimonies #records .slick-dots li:hover button:before {
 main #executive {
   border: 1px solid #ededed;
   margin-top: 10px;
+  overflow: hidden;
   padding: 10px;
-  position: relative;
-  text-align: left;
-  width: 960px;
+  width: 950px;
 }
 
 main #executive h2 {
@@ -508,13 +506,14 @@ main #news {
   border: 1px solid #ededed;
   display: table;
   margin-top: 10px;
-  position: relative;
-  width: 960px;
+  padding: 10px;
+  width: 950px;
 }
 
 main #news h2 {
   background: #587f97;
   color: #fff;
+  margin: -10px;
   padding: 5px 0 5px 20px;
   text-transform: uppercase;
 }
@@ -562,7 +561,7 @@ main #gallery {
   height: 1350px;
   margin-top: 10px;
   padding: 10px;
-  width: 960px;
+  width: 950px;
 }
 
 main #gallery h2 {
@@ -598,6 +597,5 @@ footer {
   color: #fff;
   margin-top: 10px;
   padding: 0 5px;
-  position: relative;
-  z-index: 20;
+  width: 960px;
 }
