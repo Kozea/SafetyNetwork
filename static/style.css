@@ -523,11 +523,15 @@ main #news img {
 
 main #news .news-content {
   box-sizing: border-box;
-  display: inline-block;
+  float: left;
   margin: 10px auto;
   padding: 10px;
   vertical-align: top;
   width: 50%;
+}
+
+main #news .news-content:nth-of-type(odd) {
+  clear: left;
 }
 
 main #news .news-content a {
