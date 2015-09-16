@@ -83,9 +83,9 @@ header #presentation {
 
 header #presentation:before {
   content: url("img/logo.png");
+  left: 0;
   position: absolute;
   top: -160px;
-  left: 0;
 }
 
 header #celebrating {
@@ -100,9 +100,9 @@ header #celebrating:before {
 }
 
 
-/* -- MAIN -- */
+/* -- HOME -- */
 
-main #enterprise, main #qualities {
+#enterprise,  #qualities {
   float: left;
   margin-top: 10px;
   padding: 0;
@@ -110,27 +110,43 @@ main #enterprise, main #qualities {
   width: 50%;
 }
 
-main h2 {
+article:not(#qualities):not(#enterprise) {
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  display: table;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 10px;
+  width: 950px;
+}
+
+h2 {
   font-size: 1.2em;
   font-weight: 300;
   margin: 0;
+  text-transform: uppercase;
 }
 
-main span {
+#team h2, #clients h2, #contact h2, #topics h2 {
+  text-transform: none;
+}
+
+span {
   display: block;
   font-weight: 500;
 }
 
-main .fade {
+.fade {/* - background effect hover - */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
 
+
 /* -- Enterprise -- */
 
-main #enterprise section {
+#enterprise section {
   box-sizing: border-box;
   color: #fff;
   float: left;
@@ -141,11 +157,11 @@ main #enterprise section {
   width: 230px;
 }
 
-main #enterprise section:nth-child(2n) {
+#enterprise section:nth-child(2n) {
   margin-right: 0;
 }
 
-main #enterprise section a {
+#enterprise section a {
   color: transparent;
   display: block;
   font-size: 0;
@@ -156,30 +172,31 @@ main #enterprise section a {
   width: 100%;
 }
 
-main #team {
+
+#team {
   background: #cf4545;
 }
 
-main #team:hover {
+#team:hover {
   background: #B93737;
 }
 
-main #team h2:before {
+#team h2:before {
   content: url("img/team.png");
   display: block;
   margin: -10px -10px 5px;
 }
 
 
-main #clients {
+#clients {
   background: #248a99;
 }
 
-main #clients:hover {
+#clients:hover {
   background-color: #1B7D8B;
 }
 
-main #clients h2:before {
+#clients h2:before {
   color: #fff;
   content: "90%";
   display: block;
@@ -188,36 +205,36 @@ main #clients h2:before {
 }
 
 
-main #topics {
+#topics {
   background: #587f97;
 }
 
-main #topics h2:before {
+#topics h2:before {
   content: url("img/topics.svg");
 }
 
 
-main #enterprise #contact {
+#enterprise #contact {
   background: #587f97;
   position: static;
 }
 
-main #contact h2:before, main #topics h2:before {
+#contact h2:before,  #topics h2:before {
   display: block;
   height: 45px;
   margin: 40px auto;
   width: 45px;
 }
 
-main #contact h2:before {
+#contact h2:before {
   content: url("img/contact.svg");
 }
 
-main #enterprise #contact:hover, main #enterprise #topics:hover {
+#enterprise #contact:hover,  #enterprise #topics:hover {
   background-color: #4c6e83;
 }
 
-main #contact #numbers {
+#contact #numbers {
   background: transparent;
   color: transparent;
   height: 470px;
@@ -229,18 +246,18 @@ main #contact #numbers {
   z-index: 0;
 }
 
-main #contact:hover #numbers {
+#contact:hover #numbers {
   background: #404c58;
   color: #fff;
   transition: 0.5s;
   z-index: 110;
 }
 
-main #contact #numbers {
+#contact #numbers {
   text-align: left;
 }
 
-main #contact #numbers h3 {
+#contact #numbers h3 {
   font-size: 1em;
   font-weight: 700;
   margin: 0;
@@ -248,53 +265,53 @@ main #contact #numbers h3 {
   text-transform: uppercase;
 }
 
-main #contact #numbers dl {
+#contact #numbers dl {
   font-size: 0.95em;
   margin: 5px 0;
 }
 
-main #contact #numbers dl dt {
+#contact #numbers dl dt {
   color: transparent;
   margin-top: 5px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-main #contact:hover #numbers dl dt {
+#contact:hover #numbers dl dt {
   color: #000;
 }
 
-main #contact:hover #numbers dl dt:after {
+#contact:hover #numbers dl dt:after {
+  background: #272E36;
   content: "";
   display: block;
-  width: 100%;
   height: 1px;
   margin-top: 2px;
-  background: #272E36;
+  width: 100%;
 }
 
-main #contact #numbers dl dd {
+#contact #numbers dl dd {
   display: inline-block;
   margin: 0 2px 0 2px;
 }
 
-main #contact #numbers dl dd a {
+#contact #numbers dl dd a {
   color: #fff;
   font-size: 1em;
   position: static;
   text-decoration: none;
 }
 
-main #contact #numbers dl dd a:hover {
+#contact #numbers dl dd a:hover {
   color: #000;
   transition: 0.3s;
 }
 
-main #contact #numbers .name {
+#contact #numbers .name {
   margin: 0;
 }
 
-main #contact #numbers .name:after{
+#contact #numbers .name:after {
   content: ":";
   color: inherit;
   display: inline-block;
@@ -302,26 +319,15 @@ main #contact #numbers .name:after{
 }
 
 
-main article:not(#qualities):not(#enterprise) {
-  border: 1px solid #ededed;
-  box-sizing: border-box;
-  display: table;
-  margin-top: 10px;
-  overflow: hidden;
-  padding: 10px;
-  width: 950px;
-}
-
-
 /* -- Qualities -- */
 
-main #qualities {
+#qualities {
   box-sizing: border-box;
   padding: 0 0 0 5px;
   position: relative;
 }
 
-main #qualities section {
+#qualities section {
   box-sizing: border-box;
   float: left;
   height: 470px;
@@ -330,7 +336,7 @@ main #qualities section {
   width: 230px;
 }
 
-main #qualities section a {
+#qualities section a {
   box-sizing: border-box;
   color: inherit;
   height: 100%;
@@ -342,65 +348,61 @@ main #qualities section a {
   width: 100%;
 }
 
-main #creativity h2:before, main #expertise h2:before {
+#creativity h2:before,  #expertise h2:before {
   display: block;
   height: 55px;
   margin: 80px auto 40px;
   width: 55px;
 }
 
-main #creativity {
+#creativity {
   background: #cf4545;
   color: #fff;
   text-align: center;
 }
 
-main #creativity:hover {
+#creativity:hover {
   background-color: #B93737;
 }
 
-main #creativity h2, main #expertise h2 {
-  text-transform: uppercase;
-}
-
-main #creativity h2:before {
+#creativity h2:before {
   content: url("img/creativity.svg");
 }
 
-main #qualities #expertise {
+#qualities #expertise {
   margin-right: 0;
 }
 
-main #expertise {
+#expertise {
   background: #f4f4f4;
   color: #272c2f;
   text-align: center;
 }
 
-main #expertise:hover {
+#expertise:hover {
   background-color: #d4d4d4;
 }
 
-main #expertise h2:before {
+#expertise h2:before {
   content: url("img/clients.svg");
 }
 
 
 /* -- Difference -- */
 
-main #difference #creativity {
+#difference #creativity {
   display: table-cell;
   width: 230px;
 }
 
-main #difference #ideas {
+#difference #ideas {
   display: table-cell;
   padding: 20px;
   text-align: left;
   vertical-align: top;
 }
 
-main #difference #ideas h3 {
+#difference #ideas h3 {
   color: #587f97;
   font-weight: 500;
   text-transform: uppercase;
@@ -409,13 +411,13 @@ main #difference #ideas h3 {
 
 /* -- Expertise -- */
 
-main #testimonies #expertise {
+#testimonies #expertise {
   display: table-cell;
   width: 230px;
 }
 
 
-main #testimonies #records {
+#testimonies #records {
   display: table-cell;
   left: 230px;
   margin-bottom: 50px;
@@ -423,17 +425,17 @@ main #testimonies #records {
   width: 730px;
 }
 
-main #testimonies #records section h3 {
+#testimonies #records section h3 {
   color: #cf4545;
   font-weight: 500;
   margin-bottom: 0;
 }
 
-main #testimonies #records section p {
+#testimonies #records section p {
   margin: 0;
 }
 
-main #testimonies #records section:before {
+#testimonies #records section:before {
   display: block;
   height: 100px;
   float: left;
@@ -441,11 +443,11 @@ main #testimonies #records section:before {
   width: 100px;
 }
 
-main #testimonies #records #safety {
+#testimonies #records #safety {
   position: relative;
 }
 
-main #testimonies #records #safety a {
+#testimonies #records #safety a {
   color: inherit;
   display: block;
   left: 115px;
@@ -456,47 +458,47 @@ main #testimonies #records #safety a {
   width: 100%;
 }
 
-main #testimonies #records #safety:before {
+#testimonies #records #safety:before {
   content: url("img/contact.jpg");
 }
 
-main #testimonies #records #jorge:before {
+#testimonies #records #jorge:before {
   content: url("img/jorge_hernandez.png");
 }
 
-main #testimonies #records #laurent:before {
+#testimonies #records #laurent:before {
   content: url("img/laurent_sanchez.png");
 }
 
-main #testimonies #records #xavier:before {
+#testimonies #records #xavier:before {
   content: url("img/xavier_stmartin.png");
 }
 
-main #testimonies #records #francois:before {
-  content: url("img/francois_germain.png");
+#testimonies #records #francois:before {
+  content: url("img/francois_ger.png");
 }
 
-main #testimonies #records .slick-dots {
+#testimonies #records .slick-dots {
   bottom: 0;
 }
 
-main #testimonies #records .slick-dots li {
+#testimonies #records .slick-dots li {
   margin: 0;
   width: 10px;
 }
 
-main #testimonies #records .slick-dots li.slick-active button:before {
+#testimonies #records .slick-dots li.slick-active button:before {
   color: #cf4545;
 }
 
-main #testimonies #records .slick-dots li:hover button:before {
+#testimonies #records .slick-dots li:hover button:before {
   color: #7d7d7d;
 }
 
 
 /* -- Executive team -- */
 
-main #executive {
+#executive {
   border: 1px solid #ededed;
   margin-top: 10px;
   overflow: hidden;
@@ -504,90 +506,88 @@ main #executive {
   width: 950px;
 }
 
-main #executive h2 {
+#executive h2 {
   background: #cf4545;
   color: #fff;
   margin: -10px;
   padding: 5px 0 5px 20px;
-  text-transform: uppercase;
 }
 
-main #executive #partners, main #executive #directors {
+#executive #partners,  #executive #directors {
   float: left;
   width: 50%;
 }
 
-main #executive section {
+#executive section {
   box-sizing: border-box;
   padding: 10px;
 }
 
-main #executive section h4 {
+#executive section h4 {
   margin: 0;
 }
 
-main #executive section p {
+#executive section p {
   font-size: 0.9em;
   margin-top: 5px;
 }
 
-main #executive #partners section:before, main #executive #directors section:before  {
+#executive #partners section:before,  #executive #directors section:before  {
   float: left;
   margin-right: 5px;
 }
 
-main #executive #partners #edward:before {
+#executive #partners #edward:before {
   content: url("img/edward.png");
 }
 
-main #executive #partners #sylvestre:before {
+#executive #partners #sylvestre:before {
   content: url("img/sylvestre.png");
 }
 
-main #executive #partners #thierry:before {
+#executive #partners #thierry:before {
   content: url("img/thierry.png");
 }
 
-main #executive #directors #jeff:before {
+#executive #directors #jeff:before {
   content: url("img/jeff.png");
 }
 
-main #executive #directors #emmanuel:before {
+#executive #directors #emmanuel:before {
   content: url("img/emmanuel.png");
 }
 
-main #executive #directors #eric:before {
+#executive #directors #eric:before {
   content: url("img/eric.png");
 }
 
 
 /* -- Red hot safety topics -- */
 
-main #news h2 {
+#news h2 {
   background: #587f97;
   color: #fff;
   margin: -10px;
   padding: 5px 0 5px 20px;
-  text-transform: uppercase;
 }
 
-main #news h3 {
+#news h3 {
   font-weight: 500;
 }
 
-main #news time {
+#news time {
   color: #9d9d9d;
   text-transform: uppercase;
 }
 
-main #news img {
+#news img {
   float: left;
   margin: 0 10px;
   max-height: 100%;
   max-width: 125px;
 }
 
-main #news .news-content {
+#news .news-content {
   box-sizing: border-box;
   float: left;
   margin: 10px auto;
@@ -596,16 +596,16 @@ main #news .news-content {
   width: 50%;
 }
 
-main #news .news-content:nth-of-type(odd) {
+#news .news-content:nth-of-type(odd) {
   clear: left;
 }
 
-main #news .news-content a {
+#news .news-content a {
   color: #cf4545;
   text-decoration: none;
 }
 
-main #news .news-content a:hover {
+#news .news-content a:hover {
   color: #FA7C7C;
   transition: 0.2s;
 }
@@ -613,7 +613,7 @@ main #news .news-content a:hover {
 
 /* -- Thanks to our amazing clients -- */
 
-main #gallery {
+#gallery {
   background: url("img/wallpaper.png") no-repeat 50% 40px;
   border: 1px solid #d8d8d8;
   height: 1350px;
@@ -622,15 +622,14 @@ main #gallery {
   width: 950px;
 }
 
-main #gallery h2 {
+#gallery h2 {
   background: #cf4545;
   color: #fff;
   margin: -10px;
   padding: 5px 0 5px 20px;
-  text-transform: uppercase;
 }
 
-main #gallery #clients {
+#gallery #clients {
   color: #fff;
   height: 233px;
   margin: 25px 0 0 86px;
@@ -639,7 +638,7 @@ main #gallery #clients {
   width: 233px;
 }
 
-main #gallery #clients p:before {
+#gallery #clients p:before {
   content: "90%";
   display: block;
   font-size: 3em;
@@ -665,11 +664,11 @@ footer ul li {
 
 footer ul li a {
   background: url("img/linkedin.svg") no-repeat;
-  font-size: 0;
   display: block;
+  font-size: 0;
   height: 20px;
-  width: 20px;
   position: absolute;
-  top: 5px;
   right: 5px;
+  top: 5px;
+  width: 20px;
 }
