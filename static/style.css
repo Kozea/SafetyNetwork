@@ -419,10 +419,11 @@ span {
 
 #testimonies #records {
   display: table-cell;
-  left: 230px;
+  left: 250px;
   margin-bottom: 50px;
   position: absolute;
-  width: 730px;
+  top: 500px;
+  width: 690px;
 }
 
 #testimonies #records section h3 {
