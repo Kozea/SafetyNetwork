@@ -69,6 +69,10 @@ header section:hover p:first-of-type {
   font-weight: 500;
 }
 
+header section:hover p:last-of-type {
+  margin-top: 2em;
+}
+
 header section:hover {
   background: #404c58;
   color: #fff;
