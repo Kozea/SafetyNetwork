@@ -592,7 +592,7 @@ span {
   max-width: 125px;
 }
 
-#news .news-content {
+#news section {
   box-sizing: border-box;
   float: left;
   margin: 10px auto;
@@ -601,16 +601,16 @@ span {
   width: 50%;
 }
 
-#news .news-content:nth-of-type(odd) {
+#news section:nth-of-type(odd) {
   clear: left;
 }
 
-#news .news-content a {
+#news section a {
   color: #cf4545;
   text-decoration: none;
 }
 
-#news .news-content a:hover {
+#news section a:hover {
   color: #FA7C7C;
   transition: 0.2s;
 }
