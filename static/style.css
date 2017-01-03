@@ -30,6 +30,16 @@ header h1 {
   top: 320px;
 }
 
+header h1:after {
+  content: 'Distinctive – Attentive – Dedicated';
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 2.5em;
+  opacity: 0.5;
+  text-align: center;
+  width: 460px;
+}
+
 header h1 a {
   background: url("img/logo.png") no-repeat;
   color: transparent;
