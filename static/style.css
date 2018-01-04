@@ -279,6 +279,34 @@ span {
   text-transform: uppercase;
 }
 
+#contact #numbers dt:before {
+  background: no-repeat 0 0 / contain;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 40px;
+}
+
+#contact #numbers dt.switzerland:before {
+  background-image: url(img/switzerland-flag.png)
+}
+
+#contact #numbers dt.france:before {
+  background-image: url(img/france-flag.png)
+}
+
+#contact #numbers dt.luxembourg:before {
+  background-image: url(img/luxembourg-flag.png)
+}
+
+#contact #numbers dt.spain:before {
+  background-image: url(img/spain-flag.png)
+}
+
+#contact #numbers dt.usa:before {
+  background-image: url(img/usa-flag.png)
+}
+
 #contact #numbers dl {
   font-size: 0.95em;
   margin: 5px 0;
@@ -292,7 +320,7 @@ span {
 }
 
 #contact:hover #numbers dl dt {
-  color: #000;
+  color: #fff;
 }
 
 #contact:hover #numbers dl dt:after {
@@ -420,6 +448,11 @@ span {
   color: #587f97;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+#difference #ideas #slides {
+  width: 480px;
+  margin: 2em auto 4em;
 }
 
 

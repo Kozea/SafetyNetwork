@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <title>Safety Network - Inspirational safety leadership </title>
     <link type="image/png" rel="icon" href="static/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
     <link type="text/css" rel="stylesheet" href="static/style.css" />
   </head>
 
@@ -20,19 +22,47 @@
           <h2>Our <span>creativity</span> is our <span>difference</span></h2>
           <p>Learn about our services and resources</p>
         </section>
+
         <section id="ideas">
           <h3>Reinventing ourselves constantly to change people</h3>
-          <ul>
-            <li>Inspirational Leadership & Effective Communication field workshop</li>
-            <li>"Make People Feel it" coaching to become an authentic influential leader</li>
-            <li>Organizational Safety Culture  survey</li>
-            <li>Visible Felt Leadership roadmap</li>
-            <li>Leadership 360° survey</li>
-            <li>Rituals, Symbols, Prohibitions and Recognition cultural levers</li>
-            <li>Interactive Management Learning "click system"</li>
-            <li>Human Factor Reliability workshop</li>
-            <li>Safety Encounter, "iCare", "ODA" programs…</li>
-          </ul>
+          <div id="slides">
+            <div>
+              <img src="static/img/ideas-slide-1.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-2.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-3.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-4.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-5.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-6.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-7.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-8.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-9.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-10.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-11.png" />
+            </div>
+            <div>
+              <img src="static/img/ideas-slide-12.png" />
+            </div>
+          </div>
           <h3>Be the change that you want to see around you</h3>
         </section>
       </article>
@@ -40,9 +70,17 @@
 
     <footer>
       <ul>
-        <li>© 2009-2017 SafetyNetwork</li>
+        <li>© 2009-2018 SafetyNetwork</li>
         <li><a href="https://www.linkedin.com/company/safetynetwork">Linkedin</a></li>
       </ul>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#slides").slick({arrows: false, autoplay: true, dots: true});
+      });
+    </script>
   </body>
 </html>
