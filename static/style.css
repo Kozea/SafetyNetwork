@@ -145,7 +145,7 @@ h2 {
   text-transform: none;
 }
 
-span {
+h2 span {
   display: block;
   font-weight: 500;
 }
